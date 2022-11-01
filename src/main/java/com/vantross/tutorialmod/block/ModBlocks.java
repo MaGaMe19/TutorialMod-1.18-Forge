@@ -21,22 +21,22 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CITRINE_BLOCK = registerBlock("citrine_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(5f)
+                    .strength(6f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.TUTORIAL_TAB);
 
     public static final RegistryObject<Block> CITRINE_ORE = registerBlock("citrine_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(3f)
+                    .strength(4.5f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.TUTORIAL_TAB);
 
     public static final RegistryObject<Block> DEEPSLATE_CITRINE_ORE = registerBlock("deepslate_citrine_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(3.5f)
+                    .strength(5f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.TUTORIAL_TAB);
 
     public static final RegistryObject<Block> RAW_CITRINE_BLOCK = registerBlock("raw_citrine_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(4f)
+                    .strength(5.5f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.TUTORIAL_TAB);
 
     // register block in BLOCKS
