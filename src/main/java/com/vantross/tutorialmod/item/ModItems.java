@@ -1,6 +1,7 @@
 package com.vantross.tutorialmod.item;
 
 import com.vantross.tutorialmod.TutorialMod;
+import com.vantross.tutorialmod.item.custom.OreLocatorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,6 +19,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> RAW_CITRINE = ITEMS.register("raw_citrine",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
+
+    public static final RegistryObject<Item> ORE_LOCATOR = ITEMS.register("ore_locator",
+            () -> new OreLocatorItem(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB).durability(24)));
 
 
     // register Items
