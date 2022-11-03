@@ -1,6 +1,7 @@
 package com.vantross.tutorialmod.block;
 
 import com.vantross.tutorialmod.TutorialMod;
+import com.vantross.tutorialmod.block.custom.SpeedyBlock;
 import com.vantross.tutorialmod.item.ModCreativeModeTab;
 import com.vantross.tutorialmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -37,6 +38,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> RAW_CITRINE_BLOCK = registerBlock("raw_citrine_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(5.5f)
+                    .requiresCorrectToolForDrops()), ModCreativeModeTab.TUTORIAL_TAB);
+
+    public static final RegistryObject<Block> SPEEDY_BLOCK = registerBlock("speedy_block",
+            () -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(4f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.TUTORIAL_TAB);
 
     // register block in BLOCKS

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CSC",
+    "CCC"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "C": {
+      "item": "tutorialmod:citrine_block"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:speedy_block",
+    "count": 8
+  }
+}
