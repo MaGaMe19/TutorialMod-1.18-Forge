@@ -23,7 +23,7 @@ public class SpeedyBlock extends Block {
                 LivingEntity livingEntity = ((LivingEntity) pEntity);
 
                 // apply effect
-                livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 20, 2));
+                livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 5, 2));
             }
         }
 

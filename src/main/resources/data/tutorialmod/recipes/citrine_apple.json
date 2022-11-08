@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CAC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "tutorialmod:citrine"
+    },
+    "A": {
+      "item": "minecraft:apple"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:citrine_apple"
+  }
+}

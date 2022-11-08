@@ -10,7 +10,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
 
-    // holds all item of the mod
+    // holds all items of the mod
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TutorialMod.MOD_ID);
 
     // creating citrine items, in miscellaneous creative tab
@@ -20,8 +20,13 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_CITRINE = ITEMS.register("raw_citrine",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
 
+    // ore locator
     public static final RegistryObject<Item> ORE_LOCATOR = ITEMS.register("ore_locator",
             () -> new OreLocatorItem(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB).durability(24)));
+
+    // foods
+    public static final RegistryObject<Item> CITRINE_APPLE = ITEMS.register("citrine_apple",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB).food(ModFoods.CITRINE_APPLE).stacksTo(8)));
 
 
     // register Items
