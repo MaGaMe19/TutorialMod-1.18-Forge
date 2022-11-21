@@ -3,11 +3,20 @@ package com.vantross.tutorialmod.item;
 import com.vantross.tutorialmod.TutorialMod;
 import com.vantross.tutorialmod.item.custom.CoalCokeItem;
 import com.vantross.tutorialmod.item.custom.OreLocatorItem;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.Level;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class ModItems {
 
@@ -28,7 +37,21 @@ public class ModItems {
 
     // others
     public static final RegistryObject<Item> CITRINE_APPLE = ITEMS.register("citrine_apple",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB).food(ModFoods.CITRINE_APPLE).stacksTo(8)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)
+                    .food(ModFoods.CITRINE_APPLE).stacksTo(16))
+                // anonymous function for tooltip
+            {
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable Level pLevel,
+                                            List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+
+                    if (Screen.hasShiftDown()) {
+                        pTooltipComponents.add(new TranslatableComponent("tooltip.tutorialmod.citrine_apple.shift"));
+                    } else {
+                        pTooltipComponents.add(new TranslatableComponent("tooltip.tutorialmod.generic.shift.more_info"));
+                    }
+                }
+            });
 
    public static final RegistryObject<Item> COAL_COKE = ITEMS.register("coal_coke",
            () -> new CoalCokeItem(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));

@@ -1,8 +1,8 @@
 {
   "item.tutorialmod.citrine": "Citrine",
   "item.tutorialmod.raw_citrine": "Raw Citrine",
-  "item.tutorialmod.ore_locator": "Ore Locator",
-  "item.tutorialmod.citrine_apple": "Citrine Apple",
+  "item.tutorialmod.ore_locator": "§dOre Locator",
+  "item.tutorialmod.citrine_apple": "§bCitrine Apple",
   "item.tutorialmod.coal_coke": "Coal Coke",
 
   "block.tutorialmod.citrine_block": "Citrine Block",
@@ -13,5 +13,10 @@
 
   "itemGroup.tutorialtab": "Tutorial Mod",
 
-  "item.tutorialmod.dowsing_rod.no_valuables": "No valuable ores were found!"
+  "item.tutorialmod.dowsing_rod.no_valuables": "No valuable Ores were found!",
+
+  "tooltip.tutorialmod.generic.shift.more_info": "Hold §eSHIFT§r for more Information",
+  "tooltip.tutorialmod.ore_locator.shift": "Right Click a Block to search for Valuables below that Block!",
+  "tooltip.tutorialmod.citrine_apple.shift": "Gives the following effects:\n - §bSpeed III§r for 2 minutes\n - §cRegeneration II§r for 30 Seconds\n - §eGlowing§r for 10 Seconds",
+  "tooltip.tutorialmod.block.speedy_block": "§eplayer go brrrrrrrr"
 }
