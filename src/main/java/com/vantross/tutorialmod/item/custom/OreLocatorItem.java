@@ -1,6 +1,7 @@
 package com.vantross.tutorialmod.item.custom;
 
 import com.vantross.tutorialmod.block.ModBlocks;
+import com.vantross.tutorialmod.util.ModTags;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -73,10 +74,6 @@ public class OreLocatorItem extends Item {
     }
 
     private boolean isValuableBlock(Block block) {
-        return  block == Blocks.COPPER_ORE || block == Blocks.IRON_ORE || block == Blocks.DIAMOND_ORE
-                || block == Blocks.GOLD_ORE || block == Blocks.EMERALD_ORE || block == Blocks.REDSTONE_ORE || block == Blocks.LAPIS_ORE
-                || block == Blocks.DEEPSLATE_COPPER_ORE || block == Blocks.DEEPSLATE_IRON_ORE || block == Blocks.DEEPSLATE_DIAMOND_ORE
-                || block == Blocks.DEEPSLATE_GOLD_ORE || block == Blocks.DEEPSLATE_EMERALD_ORE || block == Blocks.DEEPSLATE_REDSTONE_ORE || block == Blocks.DEEPSLATE_LAPIS_ORE
-                || block == ModBlocks.CITRINE_ORE.get() || block == ModBlocks.DEEPSLATE_CITRINE_ORE.get();
+        return ModTags.Blocks.ORE_LOCATOR_VALUABLES.contains(block);
     }
 }

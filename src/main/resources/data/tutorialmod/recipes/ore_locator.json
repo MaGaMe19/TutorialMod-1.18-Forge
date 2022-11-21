@@ -13,7 +13,7 @@
       "item": "minecraft:glass_pane"
     },
     "C": {
-      "item": "tutorialmod:citrine"
+      "tag": "forge:gems/citrine"
     }
   },
   "result": {
