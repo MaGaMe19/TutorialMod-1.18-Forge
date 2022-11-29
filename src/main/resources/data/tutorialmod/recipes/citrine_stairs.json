@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "tutorialmod:citrine_block"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:citrine_stairs",
+    "count": 4
+  }
+}

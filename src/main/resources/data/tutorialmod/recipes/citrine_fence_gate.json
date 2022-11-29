@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":[
+    "#C#",
+    "#C#"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:gems/citrine"
+    },
+    "C": {
+      "item": "tutorialmod:citrine_block"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:citrine_fence_gate"
+  }
+}
