@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "tutorialmod:citrine"
+    }
+  ],
+  "result": {
+    "item": "tutorialmod:citrine_button",
+    "count": 1
+  }
+}
