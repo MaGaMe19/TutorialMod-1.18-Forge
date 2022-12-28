@@ -10,7 +10,7 @@
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
-              "block": "minecraft:acacia_door",
+              "block": "tutorialmod:ebony_door",
               "properties": {
                 "half": "lower"
               }
