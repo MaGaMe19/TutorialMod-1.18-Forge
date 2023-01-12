@@ -2,6 +2,7 @@ package com.vantross.tutorialmod.item;
 
 import com.vantross.tutorialmod.TutorialMod;
 import com.vantross.tutorialmod.item.custom.CoalCokeItem;
+import com.vantross.tutorialmod.item.custom.LevitationSwordItem;
 import com.vantross.tutorialmod.item.custom.OreLocatorItem;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
@@ -57,6 +58,24 @@ public class ModItems {
     // tools
     public static final RegistryObject<Item> CITRINE_SWORD = ITEMS.register("citrine_sword",
             () -> new SwordItem(ModTiers.CITRINE, 5, 1f,
+                    new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB))
+
+            // hint to craft levitation sword
+            {
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable Level pLevel,
+                                            List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+
+                    if (Screen.hasShiftDown()) {
+                        pTooltipComponents.add(new TranslatableComponent("tooltip.tutorialmod.citrine_sword.hint"));
+                    } else {
+                        pTooltipComponents.add(new TranslatableComponent("tooltip.tutorialmod.generic.shift.more_info"));
+                    }
+                }
+            });
+
+    public static final RegistryObject<Item> CITRINE_LEVITATION_SWORD = ITEMS.register("citrine_levitation_sword",
+            () -> new LevitationSwordItem(ModTiers.CITRINE, 5, 1f,
                     new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
 
     public static final RegistryObject<Item> CITRINE_PICKAXE = ITEMS.register("citrine_pickaxe",

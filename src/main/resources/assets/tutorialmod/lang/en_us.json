@@ -6,6 +6,7 @@
   "item.tutorialmod.coal_coke": "Coal Coke",
 
   "item.tutorialmod.citrine_sword": "Citrine Sword",
+  "item.tutorialmod.citrine_levitation_sword": "§dCitrine Levitation Sword",
   "item.tutorialmod.citrine_pickaxe": "Citrine Pickaxe",
   "item.tutorialmod.citrine_axe": "Citrine Axe",
   "item.tutorialmod.citrine_shovel": "Citrine Shovel",
@@ -34,6 +35,8 @@
   "item.tutorialmod.dowsing_rod.no_valuables": "No valuable Ores were found!",
 
   "tooltip.tutorialmod.generic.shift.more_info": "Hold §eSHIFT§r for more Information",
+  "tooltip.tutorialmod.citrine_sword.hint": "Combine with a Nether Star in a Smithing Table to get a Citrine Levitation Sword!",
+  "tooltip.tutorialmod.levitation_sword": "Applies §eLevitation§r to the Target for 10 seconds",
   "tooltip.tutorialmod.ore_locator.shift": "Right Click a Block to search for Valuables below that Block!",
   "tooltip.tutorialmod.citrine_apple.shift": "Gives the following effects:\n - §bSpeed III§r for 2 minutes\n - §cRegeneration II§r for 30 Seconds\n - §eGlowing§r for 10 Seconds",
   "tooltip.tutorialmod.block.speedy_block": "§eplayer go brrrrrrrr"
